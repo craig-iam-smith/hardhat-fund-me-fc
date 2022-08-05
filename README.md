@@ -1,30 +1,11 @@
-# Hardhat Simple Storage
+# Hardhat Fund Me
 
-This is a section of the Javascript Blockchain/Smart Contract FreeCodeCamp Course.
+This is modified section of the Javascript Blockchain/Smart Contract FreeCodeCamp Course.
 
-*[⌨️ (08:20:17) Lesson 6: Hardhat Simple Storage](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=30017s)*
 
 [Full Repo](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
 
-- [Hardhat Simple Storage](#hardhat-simple-storage)
-- [Getting Started](#getting-started)
-  - [Requirements](#requirements)
-  - [Quickstart](#quickstart)
-  - [Typescript](#typescript)
-- [Usage](#usage)
-  - [Testing](#testing)
-    - [Test Coverage](#test-coverage)
-  - [Estimate gas](#estimate-gas)
-  - [Local Deployment](#local-deployment)
-    - [Important localhost note](#important-localhost-note)
-  - [Deployment to a testnet or mainnet](#deployment-to-a-testnet-or-mainnet)
-    - [Verify on etherscan](#verify-on-etherscan)
-- [Linting](#linting)
-- [Thank you!](#thank-you)
-
-This project is apart of the Hardhat FreeCodeCamp video.
-
-Video coming soon...
+This project is a part of the Hardhat FreeCodeCamp video.
 
 # Getting Started
 
@@ -43,25 +24,11 @@ Video coming soon...
 ## Quickstart
 
 ```
-git clone https://github.com/PatrickAlphaC/hardhat-simple-storage-fcc
-cd hardhat-simple-storage-fcc
+git clone https://github.com/craig-iam-smith/hardhat-fund-me-fc
+cd hardhat-fund-me-fc
 yarn
 yarn hardhat
 ```
-
-## Typescript
-
-For the typescript edition, run:
-
-```
-git checkout typescript
-```
-
-### Optional Gitpod
-
-If you can't or don't want to run and install locally, you can work with this repo in Gitpod. If you do this, you can skip the `clone this repo` part.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/PatrickAlphaC/hardhat-simple-storage-fcc)
 
 
 # Usage
@@ -69,19 +36,19 @@ If you can't or don't want to run and install locally, you can work with this re
 Deploy:
 
 ```
-npx hardhat run scripts/deploy.js
+yarn hardhat run scripts/deploy.js
 ```
 
 ## Testing
 
 ```
-npx hardhat test
+yarn hardhat test
 ```
 
 ### Test Coverage
 
 ```
-npx hardhat coverage
+yarn hardhat coverage
 ```
 
 ## Estimate gas
@@ -89,7 +56,7 @@ npx hardhat coverage
 You can estimate how much gas things cost by running:
 
 ```
-npx hardhat test
+yarn hardhat test
 ```
 
 And you'll see and output file called `gas-report.txt`
@@ -99,16 +66,16 @@ And you'll see and output file called `gas-report.txt`
 If you'd like to run your own local hardhat network, you can run:
 
 ```
-npx hardhat node
+yarn hardhat node
 ```
 
 And then **in a different terminal**
 
 ```
-npx hardhat run scripts/deploy.js --network localhost
+yarn hardhat run scripts/deploy.js --network localhost
 ```
 
-And you should see transactions happen in your terminal that is running `npx hardhat node`
+And you should see transactions happen in your terminal that is running `yarn hardhat node`
 
 ### Important localhost note
 
@@ -131,7 +98,7 @@ Head over to [faucets.chain.link](https://faucets.chain.link/) and get some tesn
 3. Deploy
 
 ```
-npx hardhat run scripts/deploy.js --network rinkeby
+yarn hardhat run scripts/deploy.js --network rinkeby
 ```
 
 ### Verify on etherscan
@@ -143,7 +110,7 @@ In it's current state, if you have your api key set, it will auto verify rinkeby
 However, you can manual verify with:
 
 ```
-npx hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
+yarn hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
 ```
 
 # Linting
@@ -160,10 +127,5 @@ yarn lint:fix
 # Thank you!
 
 If you appreciated this, feel free to follow me or donate!
+Based on work by Patrick Collins
 
-ETH/Polygon/Avalanche/etc Address: 0x9680201d9c93d65a3603d2088d125e955c73BD65
-
-[![Patrick Collins Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/PatrickAlphaC)
-[![Patrick Collins YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCn-3f8tw_E1jZvhuHatROwA)
-[![Patrick Collins Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrickalphac/)
-[![Patrick Collins Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@patrick.collins_58673/)
