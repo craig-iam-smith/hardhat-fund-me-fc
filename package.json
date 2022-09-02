@@ -1,7 +1,6 @@
 {
   "name": "hardhat-fund-me",
   "author": "craig smith",
-  "version"
   "devDependencies": {
     "@chainlink/contracts": "^0.4.2",
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
@@ -26,7 +25,7 @@
     "lint:fix": "yarn solhint 'contracts/*.sol' --fix",
     "test": "yarn hardhat test",
     "test:staging": "yarn hardhat test --network rinkeby",
-    "format": "yarn prettier --write ."
+    "format": "yarn prettier --write .",
     "coverage": "yarn hardhat coverage"
   },
   "version": "1.0.0",
